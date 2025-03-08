@@ -34,8 +34,8 @@ The pages are positioned as follows in the 3x3 grid:
 ## Setup Instructions
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/zoomgrid-website.git
-   cd zoomgrid-website
+   git clone https://github.com/arulkn/ZoomGrid.git
+   cd zoomGrid
    ```
 2. **Open the Project:**
    - Open `index.html` in a browser directly (e.g., double-click it or use a local server).
