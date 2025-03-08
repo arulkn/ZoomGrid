@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    overflow: hidden;
+    background: #f0f0f0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33vw);
+    grid-template-rows: repeat(3, 33.33vh);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: center center;
+}
+
+.page {
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
+    z-index: 20;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    color: #ffd700;
+}
+
+.content {
+    padding: 60px 20px 20px;
+    text-align: center;
+    height: 100%;
+    overflow-y: auto;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+/* Unique Layouts */
+.layout-1 { flex-direction: row; }
+.layout-2 { flex-direction: column; }
+.layout-3 { flex-direction: row-reverse; }
+.layout-4 { justify-content: flex-start; }
+.layout-5 { justify-content: space-between; }
+.layout-6 { flex-direction: column-reverse; }
+.layout-7 { justify-content: space-around; }
+.layout-8 { justify-content: flex-end; }
+.layout-9 { align-items: center; }
+
+/* Colors (unchanged) */
+.red { background: #ff4d4d; }
+.blue { background: #4d79ff; }
+.green { background: #4dff4d; }
+.yellow { background: #ffff4d; }
+.purple { background: #b34dff; }
+.orange { background: #ff944d; }
+.pink { background: #ff4d94; }
+.teal { background: #4dffff; }
+.cyan { background: #4dffff; }
+.lime { background: #b3ff4d; }
+.magenta { background: #ff4dff; }
+.indigo { background: #4d4dff; }
+.gray { background: #cccccc; }
+.brown { background: #8c5e3c; }
+.olive { background: #8c8c3c; }
+.maroon { background: #8c3c5e; }
+.gold { background: #ffd700; }
+.violet { background: #9400d3; }
+.silver { background: #c0c0c0; }
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 33.33vh);
+    }
+}
